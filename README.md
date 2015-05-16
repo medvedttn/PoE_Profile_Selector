@@ -1,5 +1,7 @@
-# PoE_Profile_Selector
-PoE profile selector
+# PoE profile selector
+
+Download release link:
+<https://github.com/medvedttn/PoE_Profile_Selector/releases>
 
 Allow fast switching user configs and run PoE exe after(or without) custom config selection.
 No needed to retype auth data and set-up GUI setting for every window, 
