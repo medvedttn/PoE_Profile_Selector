@@ -1,4 +1,6 @@
-# PoE profile selector
+# Path of Exile profile selector
+
+![PoE profile selector](https://i.imgur.com/N7DjfZd.png)
 
 Download release link:
 <https://github.com/medvedttn/PoE_Profile_Selector/releases>
@@ -15,6 +17,6 @@ Typical usage:<br>
 3) Run PoE, make&save setting for 2nd profile<br>
 4) Run profiler, type new second profile name into combobox, click "Create profile.."<br>
 <br>
-2 profile created, now you can select profile name from combobox and run PoE (enter path for PoE exe)<br>
+2 profiles created, now you can select profile name from combobox and run PoE (enter path for PoE exe before)<br>
 <br>
 Evgeny.
