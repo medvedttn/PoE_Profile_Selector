@@ -65,7 +65,7 @@ namespace PoE_Profile_Selector
                 OpenFileDialog select_file = new OpenFileDialog();
                 select_file.CheckFileExists = true;
                 select_file.Multiselect = false;
-                select_file.Title = "Select PoE main exe file...";
+                select_file.Title = "Select PoE main *.exe file...";
                 select_file.ValidateNames = true;
                 select_file.Filter = "Exe files(*.exe)|*.exe";
                 if (select_file.ShowDialog() == System.Windows.Forms.DialogResult.OK)
@@ -132,7 +132,7 @@ namespace PoE_Profile_Selector
 
         private void cmbProfiles_SelectedValueChanged(object sender, EventArgs e)
         {
-            if (cmbProfiles.Items.Contains(cmbProfiles.Text)) btnDelProfile.Enabled = true; else btnDelProfile.Enabled = false;
+            btnDelProfile.Enabled = (cmbProfiles.Items.Contains(cmbProfiles.Text)) ? true : false;
         }
 
         private void btnDelProfile_Click(object sender, EventArgs e)
@@ -188,7 +188,6 @@ namespace PoE_Profile_Selector
                     PoE_exe.StartInfo.UseShellExecute = true;
                     PoE_exe.StartInfo.WorkingDirectory = (new FileInfo(txtPoEpath.Text)).DirectoryName;
                     PoE_exe.StartInfo.FileName = txtPoEpath.Text;
-
                     PoE_exe.Start();
                 }
                 else
